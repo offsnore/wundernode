@@ -1,0 +1,15 @@
+{
+  "name" : "wundernode",
+  "description" : "Wunderground API wrapper in Node",
+  "homepage" : "<a href="http://evalcrux.github.com/wundernode/"http://evalcrux.github.com/wundernode/</a",
+  "keywords" : ["weather", "api", "server"],
+"author" : "Andrew Anderson<<a href="mailto:evalcrux@me.com"evalcrux@me.com</a>",
+  "contributors" : [],
+  "dependencies" : [],
+  "repository" : {"type": "git", "url": "git://github.com/evalcrux/wundernode.git"},
+  "main" : "wundernode.js",
+  "version" : "0.0.1"
+}
+
+
+
