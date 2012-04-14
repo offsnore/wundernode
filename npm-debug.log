@@ -1,0 +1,35 @@
+info it worked if it ends with ok
+verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+verbose cli   'publish' ]
+info using npm@1.1.9
+info using node@v0.6.13
+verbose C:\Program Files (x86)\nodejs\\node.exe node symlink
+verbose config file C:\Users\anande\.npmrc
+verbose config file C:\Program Files (x86)\nodejs\etc\npmrc
+verbose config file C:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+verbose mkdir done: C:\Users\anande\AppData\Roaming\npm 755
+verbose publish [ '.' ]
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+ERR! Could not install: .
+ERR! Failed to parse json
+ERR! Unexpected token h
+ERR! File: package.json
+ERR! JSON.parse Failed to parse package.json data.
+ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
+ERR! JSON.parse This is not a bug in npm.
+ERR! JSON.parse Tell the package author to fix their package.json file.
+ERR! 
+ERR! System Windows_NT 6.1.7601
+ERR! command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+ERR! cwd C:\Users\anande\Desktop\Dropbox\workspace\node\wundernode
+ERR! node -v v0.6.13
+ERR! npm -v 1.1.9
+ERR! file package.json
+ERR! code EJSONPARSE
+ERR! message Failed to parse json
+ERR! message Unexpected token h
+ERR! errno {}
+verbose exit [ 1, true ]
