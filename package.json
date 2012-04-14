@@ -1,10 +1,15 @@
 {
   "name" : "wundernode",
   "description" : "Wunderground API module for nodeJS",
-  "homepage" : "<a href="http://evalcrux.github.com/wundernode/</a>",
+  "homepage" : "http://www.github.com/evalcrux/wundernode",
   "keywords" : ["weather", "api", "wunderground", "wind", "wundernode"],
-"author" : "Andrew Anderson @aplussa",
-  "contributors" : [],
+  "author" : "Andrew Anderson @aplussa",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/arei/node-untappd/blob/master/LICENSE.txt"
+    }
+  ],
   "dependencies": {
       "express": ">= 2.5.9",
       "request": ">= 2.9.201"
@@ -16,6 +21,3 @@
   },
   "version" : "0.0.1"
 }
-
-
-
