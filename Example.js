@@ -11,7 +11,7 @@ var WunderNodeClient = require("./WunderNodeClient", true);
 // Definitions
 
 // Replace this with your API KEY
-var apikey = "";
+var apikey = "60f30928944d69dc";
 
 // Set to true if you want to see all sort of nasty output on stdout.
 var debug = false;
@@ -80,9 +80,5 @@ app.get('/satellite', function(req, res){
 		res.end(obj);
 	},req.query.loc);
 });
-
-
-
-
 
 app.listen(3000);
