@@ -11,7 +11,7 @@ var WunderNodeClient = require("./WunderNodeClient", true);
 // Definitions
 
 // Replace this with your API KEY
-var apikey = "60f30928944d69dc";
+var apikey = null;
 
 // Set to true if you want to see all sort of nasty output on stdout.
 var debug = false;
