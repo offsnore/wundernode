@@ -2,9 +2,9 @@ wundernode
 -------
 NodeJS API to integrate with [Wunderground API](http://www.wunderground.com/weather/api/).
 
-This library provides NodeJS with an abstraction to the [Untappd API](http://untappd.com/api/docs/v3) allowing developers to query and integrate Untappd services into their own applications.
+This library provides NodeJS with an abstraction to the [Wundergroun API](http://http://www.wunderground.com/weather/api/) allowing developers to query and integrate Wunderground services into their own applications.
 
-This library nor the authors have any formal relationship with Wunderground other than the beer we drink.
+This library nor the authors have any formal relationship with Wunderground other than the  wind we use.
 
 ## Getting Started
 
