@@ -6,6 +6,7 @@
 
 
 var request = require('request');
+var util = require('./Util.js')
 
 var WunderNodeClient = function(apikey, debug) {
 	var that = this;
@@ -85,7 +86,11 @@ var WunderNodeClient = function(apikey, debug) {
 	that.satellite = function(callback, query) {
 		var path = "/satellite/q/" + query +  format;
 		get(callback, null, path);
-	}		
+	}	
+	
+	that.foo = function(callback, query) {
+		return util.foo();
+	}	
 };
 
 module.exports = WunderNodeClient;
