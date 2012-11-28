@@ -33,7 +33,7 @@ var WunderNodeClient = function(apikey, debug, country, city) {
                 });
         };
 
-     // autocomplete                     
+        // autocomplete                     
         that.autocomplete = function(callback, query) {
                 var path = "/autocomplete/q/" + location +  format;
                 get(callback, null, path);
