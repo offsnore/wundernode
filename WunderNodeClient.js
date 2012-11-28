@@ -1,7 +1,7 @@
 //
 // Wunderground API Client for node.js
 // Andrew Anderson
-// twitter: evalcrux
+// twitter: @andrewandersons
 //
 // Changes made by lgriffin
 // twitter: @leighgriffin
