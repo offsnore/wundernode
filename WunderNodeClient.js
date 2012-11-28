@@ -47,7 +47,7 @@ var WunderNodeClient = function(apikey, debug, country, city) {
         };
 
         // Forecasts, current conditions and projected
-  that.hourly7day = function(callback, query) {
+        that.hourly7day = function(callback, query) {
                 var path = "/hourly7day/q/" + location +  format;
                 get(callback, null, path);
         };
