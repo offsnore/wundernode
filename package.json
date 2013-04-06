@@ -3,7 +3,7 @@
   "description" : "Wunderground API module for nodeJS",
   "homepage" : "http://www.github.com/evalcrux/wundernode",
   "keywords" : ["weather", "api", "wunderground", "wind", "wundernode"],
-  "author" : "Andrew Anderson @aplussa",
+  "author" : "Andrew Anderson @evalcrux",
   "licenses": [
     {
       "type": "MIT",
