@@ -27,7 +27,7 @@ var wunder = new WunderNodeClient(apikey,debug, country, city);
 
 var express = require('express');
 
-var app = express.createServer();
+var app = express();
 
 
 app.get('/', function(req, res) {

@@ -14,12 +14,12 @@
       "request": ">= 2.9.201"
   },
   "devDependencies": {
-      "express": ">= 2.5.9"
+      "express": ">= 3.0"
   },
   "repository" : {"type": "git", "url": "git://github.com/evalcrux/wundernode.git"},
   "main" : "wundernode.js",
   "engines": {
     "node": ">=0.6.7"
   },
-  "version" : "0.0.2"
+  "version" : "0.2.0"
 }
