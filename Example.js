@@ -5,7 +5,6 @@
 // An example of how to use the WunderNode client.
 //
 // By Andrew Anderson
-// twitter: @aplussa
 // git: www.github.com/evalcrux
 // Changes by lgriffin include defintion of country and city
 // Imports
