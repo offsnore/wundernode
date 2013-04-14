@@ -10,7 +10,7 @@
 var request = require('request');
 var util = require('util')
 
-var WunderNodeClient = function(apikey, debug, country, city) {
+var wundernode = function(apikey, debug, country, city) {
         var that = this;
         var location = country+"/"+city;
         var format = ".json";
@@ -94,6 +94,6 @@ var WunderNodeClient = function(apikey, debug, country, city) {
         }
 };
 
-module.exports = WunderNodeClient;
+module.exports = wundernode;
 
         

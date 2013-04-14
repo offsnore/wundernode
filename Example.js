@@ -10,7 +10,7 @@
 // Changes by lgriffin include defintion of country and city
 // Imports
 
-var WunderNodeClient = require("./WunderNodeClient", true);
+var WunderNodeClient = require("./wundernode", true);
 
 // Definitions
 
