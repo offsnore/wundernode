@@ -9,12 +9,12 @@
 // Changes by lgriffin include defintion of country and city
 // Imports
 
-var WunderNodeClient = require("./wundernode", true);
-
+var WunderNodeClient = require("wundernode", true);
+var URL = require('url');
 // Definitions
 
 // Replace this with your API KEY
-var apikey = "0123456789";
+var apikey = "27c9a5dc8f98410f";
 var country = "IE";
 var city = "Waterford";
 
@@ -22,7 +22,7 @@ var city = "Waterford";
 var debug = true;
 
 // Create Client
-var wunder = new WunderNodeClient(apikey,debug, country, city);
+var wunder = new WunderNodeClient(apikey,debug);
 
 var express = require('express');
 
@@ -35,60 +35,77 @@ app.get('/', function(req, res) {
 
 
 app.get('/conditions', function(req, res){
-    wunder.conditions(function(err, obj) {
+    wunder.conditions(req.query.loc, function(err, obj) {
             if (err){
                     console.log('errors: ' + err);
             }
             res.end(obj);
-    }, req.query.loc);
+    });
 });
 
 app.get('/almanac', function(req, res){
-    wunder.almanac(function(err, obj) {
+    wunder.almanac(req.query, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 app.get('/forecast', function(req, res){
-    wunder.forecast(function(err, obj) {
+   console.log('getting forecast for loc: ' + req.query.log); 
+   
+    wunder.forecast(req.query.loc, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
+});
+
+app.get('/geolookup', function(req, res) {
+   var queryData = URL.parse(req.url);
+   console.log('finding location for geoloc: ' + JSON.stringify(queryData));
+   
+   wunder.geolookup(queryData.query, function(err, obj) {
+            res.end(obj);
+    });
+   
 });
 
 app.get('/hourly', function(req, res){
-    wunder.hourly(function(err, obj) {
+    var queryData = URL.parse(req.url);
+    wunder.hourly(queryData.query, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 app.get('/hourly7day', function(req, res){
-    wunder.hourly7day(function(err, obj) {
+    var queryData = URL.parse(req.url);
+    wunder.hourly7day(queryData.query, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 app.get('/hourly10day', function(req, res){
-    wunder.hourly10day(function(err, obj) {
+    var queryData = URL.parse(req.url);
+    wunder.hourly10day(queryData.query, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 app.get('/yesterday', function(req, res){
-    wunder.yesterday(function(err, obj) {
+    var queryData = URL.parse(req.url);
+    wunder.yesterday(queryData.query, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 app.get('/satellite', function(req, res){
-    wunder.satellite(function(err, obj) {
+    var queryData = URL.parse(req.url);
+    wunder.satellite(queryData.query, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 app.get('/foo', function(req, res){
-    wunder.foo(function(err, obj) {
+    wunder.foo(req.query.loc, function(err, obj) {
             res.end(obj);
-    },req.query.loc);
+    });
 });
 
 

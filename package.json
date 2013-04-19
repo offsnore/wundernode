@@ -1,5 +1,6 @@
 {
   "name" : "wundernode",
+  "main" : "./lib/wundernode.js",
   "description" : "Wunderground API module for nodeJS",
   "homepage" : "http://www.github.com/evalcrux/wundernode",
   "keywords" : ["weather", "api", "wunderground", "wind", "wundernode"],
@@ -17,9 +18,8 @@
       "express": ">= 3.0"
   },
   "repository" : {"type": "git", "url": "git://github.com/evalcrux/wundernode.git"},
-  "main" : "wundernode.js",
   "engines": {
     "node": ">=0.6.7"
   },
-  "version" : "0.2.1"
+  "version" : "0.3.0"
 }
