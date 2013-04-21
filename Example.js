@@ -14,7 +14,7 @@ var URL = require('url');
 // Definitions
 
 // Replace this with your API KEY
-var apikey = "27c9a5dc8f98410f";
+var apikey = "12345";
 var country = "IE";
 var city = "Waterford";
 
