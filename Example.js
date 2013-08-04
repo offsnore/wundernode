@@ -107,6 +107,14 @@ app.get('/yesterday', function(req, res){
     });
 });
 
+app.get('/history', function(req, res){
+    var query = URL.parse(req.url).query;
+    var date = URL.parse(req.url).date; //format YYYYMMDD
+    wunder.history(query, date, function(err, obj) {
+        res.end(obj);
+    });
+});
+
 app.get('/planner', function(req, res){
     var queryData = URL.parse(req.url, true);
    console.log('queryData.range: ' + queryData.range);
