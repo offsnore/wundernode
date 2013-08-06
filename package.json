@@ -36,9 +36,9 @@
   "version": "0.4.0",
   "readme": "wundernode\n-------\nNodeJS API to integrate with [Wunderground API](http://www.wunderground.com/weather/api/).\n\nThis library provides NodeJS with an abstraction to the [Wunderground API](http://http://www.wunderground.com/weather/api/) allowing developers to query and integrate Wunderground services into their own applications.\n\nThis library nor the authors have any formal relationship with Wunderground other than the  wind we use.\n\n## Getting Started\n\n 1. If you have never done so, sign up for [Wunderground] Dev API service(http://www.wunderground.com/weather/api/) \n 2. Wait for you API key to be generated. This should be quick\n 3. Download wundernode: `npm install wundernode`\n 4. Look at the Example. Replace the null apikey value with your api key.\n 5. Play with the example. Good stuff, praise node some and the wunderground developers for opening a nice JSON API.\n",
   "readmeFilename": "README.md",
-  "_id": "wundernode@0.3.0",
+  "_id": "wundernode@0.4.0",
   "dist": {
     "shasum": "8811211719be44e18fd6c8a23f43f6f9294ebbd5"
   },
-  "_from": "wundernode@0.3.0"
+  "_from": "wundernode@0.3.2"
 }
