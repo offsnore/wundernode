@@ -9,14 +9,19 @@
 // Changes by lgriffin include defintion of country and city
 // Imports
 
+// Changes by bacall213 include clarification on how to use the Wundernode client,
+// including removal of unused city and country variables, and an example query.
+
 var WunderNodeClient = require("wundernode");
 var URL = require('url');
 // Definitions
 
 // Replace this with your API KEY
 var apikey = "12345";
-var country = "IE";
-var city = "Waterford";
+
+// Location is passed to the Wunderground API via the query returned by Express
+// Example query: http://127.0.0.1:3000/conditions?New York,NY
+// Generates this request: http://api.wunderground.com/api/<API_KEY>/conditions/q/New%20York,NY.json
 
 // Set to true if you want to see all sort of nasty output on stdout.
 var debug = false;
@@ -116,7 +121,7 @@ app.get('/history', function(req, res){
 });
 
 app.get('/planner', function(req, res){
-    var queryData = URL.parse(req.url, true);
+   var queryData = URL.parse(req.url, true);
    console.log('queryData.range: ' + queryData.range);
    console.log('queryData.query: ' + queryData.query);
    var query = queryData.query;
