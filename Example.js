@@ -8,7 +8,7 @@
 // git: www.github.com/evalcrux
 // Changes by lgriffin include defintion of country and city
 // Imports
-
+var config = require('./config/development');
 // Changes by bacall213 include clarification on how to use the Wundernode client,
 // including removal of unused city and country variables, and an example query.
 
@@ -16,8 +16,6 @@ var WunderNodeClient = require("wundernode");
 var URL = require('url');
 // Definitions
 
-// Replace this with your API KEY
-var apikey = "12345";
 
 // Location is passed to the Wunderground API via the query returned by Express
 // Example query: http://127.0.0.1:3000/conditions?New York,NY
@@ -27,7 +25,7 @@ var apikey = "12345";
 var debug = false;
 
 // Create Client
-var wunder = new WunderNodeClient(apikey, debug,  10, 'minute');
+var wunder = new WunderNodeClient(config.api, debug,  10, 'minute');
 
 var express = require('express');
 
